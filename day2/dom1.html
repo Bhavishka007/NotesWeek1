@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont">
+        <h1>one</h1>
+        <h1>tow</h1>
+        <div id="para">
+            <p>four</p>
+            <h1>five</h1>
+            <h1>world</h1>
+        </div>
+        <h3 id="para">hello</h3>
+        <p>six</p>
+        <div>seven</div>
+        <h2 class="cont">krmu</h2>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    // M-1 Select by its id 
+    const idElement = document.getElementById("para");
+    console.log(idElement);
+
+    //HTML Collection
+    const classElement = document.getElementsByClassName("cont");
+    console.log(classElement);
+
+    const tagElement = document.getElementsByTagName("p");
+    console.log(tagElement);
+
+    for (let i = 0; i < tagElement.length; i++) {
+        console.log(tagElement[i].textContent);
+
+    }
+
+    // 4. queryselector
+    const queryelement = document.querySelector("#para h1");
+    console.log(queryelement);
+
+    // 5. querySelectorAll
+    // NodeList
+    const queryAllElm = document.querySelectorAll("#para h1");
+    console.log(queryAllElm);
+
+
+
+    //Home Task: HTMLCollection VS NodeList 
+</script>
